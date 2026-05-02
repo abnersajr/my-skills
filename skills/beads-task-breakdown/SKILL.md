@@ -1,6 +1,6 @@
 ---
 name: beads-task-breakdown
-description: Break features/specs into Beads issues. Create epics, tasks, subtasks; set priorities; establish dependency chains. Triggers: "create issues for", "break down this feature", "plan this in beads".
+description: 'Break features/specs into Beads issues. Create epics, tasks, subtasks; set priorities; establish dependency chains. Triggers: "create issues for", "break down this feature", "plan this in beads".'
 ---
 
 # Beads Task Breakdown

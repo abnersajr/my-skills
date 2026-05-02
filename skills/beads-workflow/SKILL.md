@@ -1,6 +1,6 @@
 ---
 name: beads-workflow
-description: Use when working with Beads issue tracker (bd CLI). Covers task lifecycle: ready → claim → work → update → close. Use when user says "check beads", "what's next", "claim a task", "update issue", or when agent needs to find work to do.
+description: 'Use when working with Beads issue tracker (bd CLI). Covers task lifecycle: ready -> claim -> work -> update -> close. Use when user says "check beads", "what''s next", "claim a task", "update issue", or when agent needs to find work to do.'
 ---
 
 # Beads Workflow
@@ -15,12 +15,12 @@ Verify Beads initialized before using `bd`:
 bd ready --json 2>/dev/null || echo "Beads not initialized. Run: bd init"
 ```
 
-`BEADS_DIR` set → all commands use that path. Otherwise `bd` discovers `.beads/` from git repo root.
+`BEADS_DIR` set -> all commands use that path. Otherwise `bd` discovers `.beads/` from git repo root.
 
 ## Task Lifecycle
 
 ```
-bd ready → bd update <id> --claim → [work] → bd update <id> --status done → bd close <id> "reason"
+bd ready -> bd update <id> --claim -> [work] -> bd update <id> --status done -> bd close <id> "reason"
 ```
 
 ### 1. Find Work
@@ -89,9 +89,9 @@ bd list --json            # JSON output for parsing
 
 When dispatched as agent:
 
-1. Run `bd ready --json` → find available tasks
+1. Run `bd ready --json` -> find available tasks
 2. Pick highest priority (P0 > P1 > P2 > P3)
-3. `bd update <id> --claim` → atomic claim
+3. `bd update <id> --claim` -> atomic claim
 4. Do work
 5. `bd update <id> --note "progress update"` periodically
 6. `bd close <id> "summary"` when done
